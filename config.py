@@ -41,13 +41,13 @@ FSC3 = int(os.environ.get("FSC3", "-1002829136112"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1500")) #in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "120")) #in seconds
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʏᴏᴏ {mention} ✌🏻</b></blockquote> <blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "6321064549 2061656269").split()):
+    for x in (os.environ.get("ADMINS", "8161969571").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
